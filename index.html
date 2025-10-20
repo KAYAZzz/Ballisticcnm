@@ -1,40 +1,28 @@
 
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Ballistic Unblocked</title>
-<style>
-    html, body {
-        padding: 0;
-        margin: 0;
-        height: 100%;
-        overflow: hidden;
-        background: #000;
-    }
-    #gamePlace {
-        width: 100%;
-        height: 100%;
-    }
-</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,user-scalable=no">
+    <title>Ballistic Unblocked</title>
+    <style>
+        html,
+        body {
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+    </style>
 </head>
-<body>
-<div id="gamePlace"></div>
-
-<!-- Local scripts only -->
+<body style="overflow:hidden; margin:0; padding:0;">
+<script>
+    window.location="https://kayazzz.github.io/Ballisticcnm/";
+</script>
+<div id="gamePlace" style="height:100%;"></div>
 <script src="pixi.js"></script>
 <script src="main.js"></script>
 <script src="js/analytics_ubg_v1_4.js"></script>
 <script src="js/ubg235_client_v1_1.js"></script>
-
-<script>
-    // Ensure the game initializes on #gamePlace
-    if (typeof initGame === 'function') {
-        initGame(document.getElementById('gamePlace'));
-    } else {
-        console.log("Game scripts loaded. Make sure main.js has an init function or auto-starts the game.");
-    }
-</script>
 </body>
 </html>
